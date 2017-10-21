@@ -1,0 +1,19 @@
+Implement a basic web crawler using Java.
+• The program is given a seed URL to start with from standard input.
+• The program fetches the web page designated by the seed URL and parses it.
+• The program obtains a list of link URLs (for simplicity, only the <a href> tags, *.html and
+*.htm links, including relative links) and puts them into an URL queue.
+• The URL queue pops the link that has the highest priority. Depending on the design of the
+URL queue (priority scheme), the program performs breadth-first search, depth-first-search
+or any other interesting priority based search. The design of the priority scheme is up to you
+and is one of the core parts of this test. At the minimum, you must implement breadth-first
+search. It is however much desirable that your design of the priority scheme is configurable
+so that breadth-first search is just one instance. The simplest configuration method would be
+to provide a command line parameter specifying which priority scheme to use. However, any
+configuration method is fine.
+• The program pops a link from the URL queue and does all of the above again.
+• The program stops when it reaches the maximum size of the URL queue which should be
+read from standard input. Thus, the program takes two arguments, the seed URL and the
+maximum URL queue size. 1,000 is a good maximum URL queue size.
+• The program writes informative messages to standard output while performing the crawl,
+such as the link being visited etc.

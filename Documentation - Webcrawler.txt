@@ -1,0 +1,19 @@
+Documentation
+
+Classes:
+PUnit: This class represents a node in the priority tree. 
+It has a URL, parent, and a list of children units.
+The parent of the seed URL is null. Randoms have been removed.
+The searches are designed to traverse the entire tree before an
+element is returned
+
+Priority Tree: This class represents a tree where the children 
+of any node are the links pointed in the page of the node's URL.
+Every tree has a seed and a size.
+
+WebCrawler2: This is the crawling program that accepts 3 arguments:
+Seed URL, maxSize and bfs. If the 3rd argument is bfs, searches will
+be breadth-first, else they will be depth-first.
+
+For testing
+java WebCrawler2 http://www.smh.com.au 100 bfs
